@@ -12,10 +12,10 @@ import GenImage from "@/components/gen-image";
 import {Fullscreen, Slideshow, Thumbnails, Zoom} from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import photos from "@/components/photos";
+import photos, {postPhotos} from "@/components/photos";
 
 export default function PhotoGallery() {
-    const [index, setIndex] = useState(-1);
+    const [index, setIndex] = useState<string | undefined>('');
     return (
         <>
             <PhotoAlbum
@@ -23,7 +23,7 @@ export default function PhotoGallery() {
                 layout="columns"
                 renderPhoto={GenImage}
                 defaultContainerWidth={1200}
-                onClick={({index}) => setIndex(index)}
+                onClick={item => setIndex(item.photo.key)}
                 sizes={{
                     size: "calc(100vw - 40px)",
                     sizes: [
@@ -35,10 +35,10 @@ export default function PhotoGallery() {
             />
 
             <Lightbox
-                slides={photos}
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
+                slides={postPhotos(index!)}
+                open={index !== undefined}
+                index={0}
+                close={() => setIndex(undefined)}
                 // enable optional lightbox plugins
                 plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
             />

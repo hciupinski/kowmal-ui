@@ -1,23 +1,20 @@
 import * as React from "react";
 
 import "@/app/globals.css";
-import {Metadata} from "next";
-import HeaderCard from "@/components/header-card";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: 'Kowmal - gallery',
 }
 
-export default function RootLayout({children}: React.PropsWithChildren) {
+export default function RootLayout({ children }: React.PropsWithChildren) {
     return (
         <html lang="en">
-        <body>
-        <React.StrictMode>
-            <main>
-                {children}
-            </main>
-        </React.StrictMode>
-        </body>
+            <body>
+                <main>
+                    {children}
+                </main>
+            </body>
         </html>
     );
 }
