@@ -7,6 +7,7 @@
 .yarn/install-state.gz
 
 /public/photos.json
+/public/photos/photos.local.json
 /public/photos/*
 
 # testing
