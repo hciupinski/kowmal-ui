@@ -27,7 +27,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-            az storage blob upload-batch --account-name kowmalgallery --auth-mode key -d '$web' -s ./out --override
+            az storage blob upload-batch --account-name kowmalgallery --auth-mode key -d '$web' -s ./out --overwrite
     # - name: Purge CDN endpoint
     #   uses: azure/CLI@v1
     #   with:
