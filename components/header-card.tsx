@@ -1,9 +1,8 @@
 'use client';
 
-import { EnvelopeIcon } from '@heroicons/react/24/solid'
-import Image from "next/image";
-
 import { Anton, Bilbo_Swash_Caps } from 'next/font/google'
+import React from "react";
+import {SocialIcon} from "react-social-icons";
 
 const anton = Anton({ weight: "400", subsets: ['latin'] })
 const bilbo = Bilbo_Swash_Caps({weight: "400", subsets: ['latin'] })
@@ -24,23 +23,17 @@ export default function HeaderCard() {
                     <div className={`flex justify-center mt-6 gap-8`}>
                         <div>
                             <p className="text-sm text-kowmal-primary">
-                                <a href={"mailto:tomekdesa@gmail.com"} target={'_blank'}>
-                                    <EnvelopeIcon width={22} height={22}/>
-                                </a>
+                                <SocialIcon url="mailto:tomekdesa@gmail.com" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                         <div className="ml-6">
                             <p className="text-sm text-kowmal-primary">
-                                <a href={"https://www.facebook.com/tomek.kowmal/"} target={'_blank'}>
-                                    <Image src={'/fb.png'} alt={'fb'} width={22} height={22} className={'mb-1'}/>
-                                </a>
+                                <SocialIcon url="https://facebook.com/tomek.kowmal/" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                         <div className="ml-6">
                             <p className="text-sm text-kowmal-primary">
-                                <a href={"https://www.instagram.com/tomekkowmal/"} target={'_blank'}>
-                                    <Image src={'/insta.svg'} alt={'insta'} width={22} height={22} className={'mb-1'}/>
-                                </a>
+                                <SocialIcon url="https://instagram.com/tomekkowmal" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                     </div>
