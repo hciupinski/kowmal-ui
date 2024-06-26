@@ -24,7 +24,7 @@ export default function Home() {
                     <PhotoGallery />
                 </div>
     
-                <div className={`justify-center mx-auto my-6 text-kowmal-primary ${anton.className}`}>
+                <div className={`justify-center mx-auto mt-6 text-kowmal-primary ${anton.className}`}>
                     created by <a href={"https://github.com/hciupinski"} target="_blank">hciupinski</a> 2024
                 </div>
             </div>
