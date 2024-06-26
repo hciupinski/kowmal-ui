@@ -11,7 +11,7 @@ const anton = Anton({ weight: "400", subsets: ['latin'] })
 export default function Home() {
     return (
         <NextUIProvider>
-            <div className={`bg-kowmal-bg flex flex-col min-h-screen`}>
+            <div className={`bg-kowmal-bg flex flex-col h-[calc(100vh-2.5rem)]`}>
                 <div className={`min-w-screen mx-auto header-row `}>
                     <div className={"flex items-center"}>
                         <div className="">
@@ -24,7 +24,7 @@ export default function Home() {
                     <PhotoGallery />
                 </div>
     
-                <div className={`justify-center mx-auto mt-6 text-kowmal-primary ${anton.className}`}>
+                <div className={`justify-center mx-auto mt-6 mb-1 text-kowmal-primary ${anton.className}`}>
                     created by <a href={"https://github.com/hciupinski"} target="_blank">hciupinski</a> 2024
                 </div>
             </div>
