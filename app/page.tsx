@@ -13,7 +13,7 @@ export default function Home() {
         <NextUIProvider>
             <div className={`bg-kowmal-bg flex flex-col min-h-screen`}>
                 <div className={`min-w-screen mx-auto header-row `}>
-                    <div className={"flex items-center w-80"}>
+                    <div className={"flex items-center"}>
                         <div className="">
                             <HeaderCard />
                         </div>
