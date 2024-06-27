@@ -11,7 +11,7 @@ const anton = Anton({ weight: "400", subsets: ['latin'] })
 export default function Home() {
     return (
         <NextUIProvider>
-            <div className={`bg-kowmal-bg flex flex-col h-[calc(100vh-2.5rem)]`}>
+            <div className={`bg-kowmal-bg flex flex-col min-h-[calc(100vh-2.5rem)] h-[calc(100%-2.5rem)]`}>
                 <div className={`min-w-screen mx-auto header-row `}>
                     <div className={"flex items-center"}>
                         <div className="">
