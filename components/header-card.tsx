@@ -23,17 +23,17 @@ export default function HeaderCard() {
                     <div className={`flex justify-center mt-6 gap-8`}>
                         <div>
                             <p className="text-sm text-kowmal-primary">
-                                <SocialIcon url="mailto:tomekdesa@gmail.com" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
+                                <SocialIcon url="mailto:tomekdesa@gmail.com" target="_blank" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                         <div className="ml-6">
                             <p className="text-sm text-kowmal-primary">
-                                <SocialIcon url="https://facebook.com/tomek.kowmal/" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
+                                <SocialIcon url="https://facebook.com/tomek.kowmal/" target="_blank" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                         <div className="ml-6">
                             <p className="text-sm text-kowmal-primary">
-                                <SocialIcon url="https://instagram.com/tomekkowmal" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
+                                <SocialIcon url="https://instagram.com/tomekkowmal" target="_blank" bgColor="#E4C59E" fgColor="#322C2B" style={{ height: 25, width: 25 }} />
                             </p>
                         </div>
                     </div>
